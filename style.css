@@ -22,12 +22,18 @@
 
 .menu-bar ul {
     list-style-type: none;
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.15rem;
 }
 
 .menu-bar li {
-    display: inline;
+   
+
     margin: 0 10px;
+    
 }
 
 .menu-bar a {
@@ -51,11 +57,11 @@
     height: auto;
 }
 
-.profile-toggle {
+.profile-toggle,.toggle-input {
     display: none;
 }
 
-.profile-toggle-label {
+.profile-toggle-label, .toggle-btn {
     background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
@@ -75,20 +81,24 @@
 }
 
 .toggle-btn {
-    background-color: #007bff;
+    background-color: blue;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 20px;
+    /* z-index: 2;
+    position: relative; */
+    
+    
 }
 
 .timetable {
     display: none;
 }
 
-#toggle-timetable:checked + .timetable {
+#toggle-timetable:checked ~ .timetable {
     display: block;
 }
 
@@ -104,6 +114,7 @@
 }
 .timetable th {
     background-color: #f2f2f2;
+    color:black;
 }
 .profile-info {
     display: none;
@@ -114,7 +125,7 @@
 }
 
 
-.student-information{
+.student-information,.timetable-section{
     margin-top: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -122,3 +133,11 @@
     justify-content: center;
     gap:1rem;
 }
+
+
+.toggle-input{
+    /* position: absolute; */
+    /* top:0rem;
+    bottom:0rem;    */
+}
+
