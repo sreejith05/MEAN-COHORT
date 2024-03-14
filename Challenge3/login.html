@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentManagement Spring 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="welcome-page">
+        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRZptc4_VGOltMAWmemon_5ag7ooZxWpkflqIzJRe_Og&s" alt="Spring Flowers School Logo" class="school-logo">
+    
+        <h1>Welcome to Spring Flowers School</h1>
+        </section>
+        
+<nav class="menu-bar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Timetable</a></li>
+        <li><a href="#" id="monthlyActivitiesBtn">Monthly Activities</a></li>
+           
+    </ul>
+</nav>
+    
+    <section class="monthly-activities">
+        <h2>Monthly Activities</h2>
+        <select id="subjectDropdown">
+            <option value="">Select a subject</option>
+            <option value="Maths" onclick="subjectDetails()">Maths</option>
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="English">English</option>
+        </select>
+        <div id="activityList"></div>
+    </section>
+
+    <script src="script.js"></script>
+    <!-- <script>
+        // Check if user is logged in
+        const loggedIn = localStorage.getItem('loggedIn');
+        const welcomePage = document.getElementById('welcomePage');
+        const loginRedirect = document.getElementById('loginRedirect');
+
+        if (loggedIn) {
+            welcomePage.style.display = 'block';
+            loginRedirect.style.display = 'none';
+        } else {
+            welcomePage.style.display = 'none';
+            loginRedirect.style.display = 'block';
+        }
+    </script> -->
+</body>
+</html>

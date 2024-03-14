@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management Spring 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+
+    <section class="login-page">
+        <h1>Student Login</h1>
+        <form id="loginForm" >
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="handlesubmit()">Login</button>
+            <a href="#" id="registerLink">Register</a>
+        </form>
+    </section>
+
+    <section class="registration-page" style="display: none;">
+        <h1>Student Registration</h1>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="regUsername">Username:</label>
+                <input type="text" id="regUsername" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="regPassword">Password:</label>
+                <input type="password" id="regPassword" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+            <!-- <a href="index2.html" id="loginLink">Login</a> -->
+            <button type="submit" id="loginLink" type="submit" >Login</button>
+        </form>
+    </section>
+
+
+    <section class="monthly-activities" style="display: none;">
+        <h2>Monthly Activities</h2>
+        <select id="subjectDropdown">
+            <option value="">Select a subject</option>
+            <option value="Maths" >Maths</option>
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="English">English</option>
+        </select>
+        <div id="activityList"></div>
+    </section>
+
+    <script src="script.js"></script>
+    <!-- <script>
+        // Check if user is logged in
+        const loggedIn = localStorage.getItem('loggedIn');
+        const welcomePage = document.getElementById('welcomePage');
+        const loginRedirect = document.getElementById('loginRedirect');
+
+        if (loggedIn) {
+            welcomePage.style.display = 'block';
+            loginRedirect.style.display = 'none';
+        } else {
+            welcomePage.style.display = 'none';
+            loginRedirect.style.display = 'block';
+        }
+    </script> -->
+</body>
+</html>
