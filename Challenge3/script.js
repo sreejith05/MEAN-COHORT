@@ -11,6 +11,7 @@ const registerLink = document.getElementById('registerLink');
 const loginLink = document.getElementById('loginLink');
 const loginPage = document.querySelector('.login-page');
 const registrationPage = document.querySelector('.registration-page');
+const logout = document.getElementById('logout-btn')
 
 // Show registration page
 // registerLink.addEventListener('click', (e) => {
@@ -34,6 +35,7 @@ loginForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
+    const loggedIn = true
 
     console.log(username)
     console.log(password)
@@ -45,11 +47,19 @@ loginForm.addEventListener('submit', (e) => {
         window.location.href = 'login.html';
         localStorage.setItem("username",username)
         localStorage.setItem("password",password)
+        localStorage.setItem('loggedIn',true)
     } else {
         alert('Invalid username or password');
         //redirect to other page
     }
 });
+
+}
+
+const handleLogout = () => {
+    logout.addEventListener('click', (e) =>{
+        window.location.href = 'index.html'
+    },false)
 }
 
 const handleRegistration = ()=>{
@@ -100,11 +110,12 @@ const monthlyActivitiesSection = document.querySelector('.monthly-activities');
 const subjectDropdown = document.getElementById('subjectDropdown');
 const activityList = document.getElementById('activityList');
 
+
 // Show/hide monthly activities
 const subjectDetails = () => {
     monthlyActivitiesBtn.addEventListener('click', () => {
         monthlyActivitiesSection.style.display = monthlyActivitiesSection.style.display === 'none' ? 'block' : 'none';
-    });
+    },true);
 
     // Filter and display monthly activities based on selected subject
     subjectDropdown.addEventListener('change', () => {
@@ -125,4 +136,4 @@ const subjectDetails = () => {
 }
 
 // Call the subjectDetails function after the DOM content is loaded
-document.addEventListener('DOMContentLoaded', subjectDetails);
+document.addEventListener('DOMContentLoaded', subjectDetails)
