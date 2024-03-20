@@ -14,7 +14,7 @@
     padding: 2rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #f8f8f8;
+    background-color: #f7ffb4;
 }
 
 .login-page h1,
@@ -90,16 +90,16 @@
 .welcome-page {
     text-align: center;
     padding: 0.5rem;
-    background-color: #f0f0f0;
+    background-color: #feffb6;
     display:flex;
     justify-content:baseline;
     align-items: center;
-    gap:15rem;
+    gap:25rem;
 }
 
 .menu-bar {
-    background-color: #4d4d4d;
-    color: #0a0a0a;
+    background-color: #cbffa1;
+    color: #ffffff;
     padding: 10px 0;
 }
 
@@ -120,7 +120,7 @@
 }
 
 .menu-bar a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -147,6 +147,6 @@
 .monthly-activities select {
     margin-bottom: 1rem;
     padding: 0.5rem;
-    border: 1px solid #ccc;
+    border: 1px solid #fdff9f;
     border-radius: 3px;
 }

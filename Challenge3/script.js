@@ -89,17 +89,17 @@ const monthlyActivities = [
     },
     {
         id: 2,
-        activity: "Prepare a presentation on Newton's laws of motion",
+        activity: "Prepare a presentation on Nanotechnology",
         subject: "Physics"
     },
     {
         id: 3,
-        activity: "Write an essay on the importance of chemistry in daily life",
+        activity: "Write a lab report on the experiments done",
         subject: "Chemistry"
     },
     {
         id: 4,
-        activity: "Read and analyze the novel 'To Kill a Mockingbird'",
+        activity: "Read and analyze the novel 'Harry Potter'",
         subject: "English"
     }
 ];
